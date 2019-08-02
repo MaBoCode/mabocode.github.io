@@ -5,7 +5,8 @@ description: >-
   Hey ! I'm Matthias, a passionate computer science student. 
   If you're eager to learn more about Programming, Computer Security and much more, read my stories.
   So, this is what I learned today...
-url: "." # the base hostname & protocol for your site, e.g. http://example.com
+url: "mabocode.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+base_url: /blog-v2
 show_excerpts: true
 
 #paginate: 6
