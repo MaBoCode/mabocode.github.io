@@ -1,0 +1,88 @@
+@import 'ext/variables.scss';
+
+@import 'ext/normalize';
+@import 'ext/syntax';
+
+@import 'sections/header.scss';
+@import 'sections/posts.scss';
+@import 'sections/post.scss';
+@import 'sections/pagination.scss';
+@import 'sections/tags.scss';
+@import 'sections/no-posts.scss';
+
+@import 'status/404.scss';
+
+html, body {
+    height: 100%;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    @media screen and (max-width: $mobileW) {
+        height: auto;
+    }
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: $highCNLight;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: stretch;
+
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    //overflow-y: scroll;
+
+    @media screen and (max-width: $mobileW) {
+        flex-direction: column;
+    }
+}
+
+h1, h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: $highCNLight;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: $highCNLight;
+}
+
+p > a {
+    text-decoration: none;
+    color: $secondaryLight;
+}
+
+p > a:hover {
+    color: $secondary;
+}
+
+p > a:visited {
+    color: $secondaryDark;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $midCNLight;
+}
