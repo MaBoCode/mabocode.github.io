@@ -1,0 +1,126 @@
+.tags-content {
+
+    //padding: 8vh 4vw;
+
+    width: 80%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    margin: 0;
+
+    //justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $mobileW) {
+        width: 100%;
+    }
+
+    .tags-list {
+        display: flex;
+
+        flex-wrap: wrap;
+
+        //width: 40vw;
+        max-width: 500px;
+
+        justify-content: center;
+
+        margin-bottom: 20px;
+        margin-top: 40px;
+
+        @media screen and (max-width: $mobileW) {
+            //max-width: 60vw;;
+        }
+
+        .tag {
+            margin-bottom: 12px;
+        }
+    }
+
+    .tags-section {
+
+        max-width: 80%;
+        //width: auto;
+
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 2em;
+
+            color: $highCNLight;
+
+            text-transform: capitalize;
+
+            font-family: 'Noto Sans JP', sans-serif;
+            
+            border-bottom: 2px solid rgba(56, 61, 71, .5);
+
+            padding-bottom: 8px;
+
+            @media screen and (max-width: $smallMobileW) {
+                font-size: 1.2em;
+            }
+            
+        }
+
+        .tags-posts {
+            display: flex;
+
+            flex-direction: column;
+
+            list-style: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            //margin-bottom: 20px;
+
+            //padding-left: 80px;
+
+
+            li {
+
+                margin-bottom: 12px;
+                
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                a {
+                    text-decoration: none;
+
+                    font-size: 1.2em;
+                    font-family: 'Open Sans', sans-serif;
+
+                    color: $midCNLight;
+
+                    font-weight: 500;
+
+                    transition: color .2s;
+
+                    @media screen and (max-width: $smallMobileW) {
+                        font-size: 1em;
+                    }
+
+                    &:before {
+                        content: '-';
+                    }
+
+                    &:visited {
+                        color: none;
+                    }
+
+                    &:hover {
+                        color: $highCNLight;
+                    }
+                }
+            }
+        }
+    }
+}

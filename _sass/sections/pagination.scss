@@ -1,0 +1,52 @@
+.pagination {
+
+    align-items: flex-end;
+    
+    text-align: center;
+
+    margin: 0 auto 1vh;
+
+    font-family: 'Open Sans', sans-serif;
+
+    @media screen and (max-width: $mobileW) {
+        display: none;
+    }
+
+    a {
+        display: block;
+
+        float: left;
+
+        padding: 10px;
+
+        margin-right: 2px;
+        margin-left: 2px;
+
+        width: 16px;
+        height: 16px;
+
+        border-radius: 50%;
+        
+        text-decoration: none;
+
+        color: $midCNLight;
+
+        background-color: none;
+
+        transition-property: background-color, color;
+        transition-duration: .5s;
+    }
+
+    a:hover {
+        background-color: $lowCNLight;
+
+        color: white;
+    }
+
+    a[href=""] {
+        background-color: $lowCNLight;
+
+        color: white;
+        pointer-events: none;
+    }
+}

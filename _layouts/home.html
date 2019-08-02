@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{%- if site.posts.size > 0 -%}
+
+<div class="box">
+    <h2 class="home-title">Posts</h2>
+    
+    <div class="post-feed">
+        {%- for post in site.posts -%}
+
+            {% include post-card.html %}
+
+        {%- endfor -%}
+
+        {{ content }}
+    </div>
+
+    <!--
+    {%- if paginator.total_pages > 1 -%}
+
+        {% include pagination.html %}
+
+    {%- endif -%}
+    --->
+</div>
+
+
+{%- else -%}
+
+{% include no-posts.html %}
+
+{% endif %}

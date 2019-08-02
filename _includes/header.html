@@ -1,0 +1,29 @@
+<header>
+    <div class="about">
+        <img src="/assets/imgs/about-bg.jpg" height="140" width="140" alt="Profile Picture" onclick="window.location.href='{{ site.url }}'">
+        <h2>{{ site.my_info.full_name }}</h2>
+        <p>{{ site.my_info.profession }}</p>
+        <div class="socials">
+            <ul>
+                <li>
+                    <a href="https://github.com/{{ site.my_info.socials.github }}" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/{{ site.my_info.socials.linkedIn }}" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:{{ my_info.email }}" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="more">
+        <p>Made with <i class="fas fa-heart"></i> &nbsp; &copy; 2019</p>
+    </div>
+</header>
