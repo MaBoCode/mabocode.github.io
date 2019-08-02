@@ -20,10 +20,6 @@ html, body {
     padding: 0;
 
     box-sizing: border-box;
-
-    @media screen and (max-width: $mobileW) {
-        height: auto;
-    }
 }
 
 html {
