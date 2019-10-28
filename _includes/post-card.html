@@ -14,7 +14,7 @@
 
                     {% if cat.size < 12 %}
                     <li>
-                        <a class="tag" href="/categories/{{ cat | slugify }}">
+                        <a class="tag" href="{{ site.baseurl }}/categories/#{{ cat | slugify }}">
                            {{ cat }}
                         </a>
                     </li>
