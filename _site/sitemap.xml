@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://mabocode.github.io/posts/2019/07/01/otw-natas-0</loc>
-<lastmod>2019-07-01T08:31:56+02:00</lastmod>
-</url>
-<url>
 <loc>https://mabocode.github.io/404</loc>
 </url>
 <url>
 <loc>https://mabocode.github.io/about/</loc>
 </url>
 <url>
-<loc>https://mabocode.github.io/</loc>
+<loc>https://mabocode.github.io/categories</loc>
 </url>
 <url>
-<loc>https://mabocode.github.io/tags</loc>
+<loc>https://mabocode.github.io/</loc>
 </url>
 </urlset>

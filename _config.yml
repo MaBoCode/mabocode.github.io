@@ -6,7 +6,6 @@ description: >-
   If you're eager to learn about Programming, Computer Security and much more, read my stories.
   So, this is what I learned today...
 url: "https://mabocode.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-base_url: "/"
 show_excerpts: true
 
 #paginate: 6
@@ -17,7 +16,7 @@ highlighter: rouge
 # My info
 my_info:
   full_name     : Matthias Brown
-  pseudo        : MbM
+  pseudo        : ""
   profession    : Computer Science Student
   email         : matthias.brown@etu.univ-tours.fr
   socials:
@@ -31,8 +30,8 @@ sass:
 
 # Serving
 detach              : false
-#port                : 4004
-#host                : 127.0.0.1
+port                : 4004
+host                : 127.0.0.1
 baseurl             : "" # does not include hostname
 show_dir_listing    : false
 livereload          : true
@@ -65,4 +64,4 @@ incremental         : true
 #   - vendor/gems/
 #   - vendor/ruby/
 
-permalink: /posts/:categories/:year/:month/:day/:title
+permalink: /posts/:categories/:title

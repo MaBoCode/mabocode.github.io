@@ -15,10 +15,10 @@ layout: default
             <div class="post-meta">
 
                 <ul class="post-categories">
-                    {%- for tag in page.tags -%}
+                    {%- for cat in page.categories -%}
                         <li>
-                            <a class="tag" href="/tags/#{{ tag | slugify }}">
-                                {{ tag }}
+                            <a class="tag" href="/categories/{{ cat | slugify }}">
+                                {{ cat }}
                             </a>
                         </li>
                     {%- endfor -%}
