@@ -31,8 +31,8 @@ sass:
 
 # Serving
 detach              : false
-#port                : 4001
-#host                : 127.0.0.1
+port                : 4004
+host                : 127.0.0.1
 baseurl             : "" # does not include hostname
 show_dir_listing    : false
 
@@ -62,4 +62,4 @@ unpublished         : false
 #   - vendor/gems/
 #   - vendor/ruby/
 
-permalink: /blog/:categories/:year/:month/:day/:title
+permalink: /posts/:categories/:year/:month/:day/:title

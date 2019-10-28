@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>mabocode.github.io/blog/2019/07/01/otw-natas-0</loc>
+<loc>http://localhost:4004/posts/2019/07/01/otw-natas-0</loc>
 <lastmod>2019-07-01T08:31:56+02:00</lastmod>
 </url>
 <url>
-<loc>mabocode.github.io/404</loc>
+<loc>http://localhost:4004/404</loc>
 </url>
 <url>
-<loc>mabocode.github.io/about/</loc>
+<loc>http://localhost:4004/about/</loc>
 </url>
 <url>
-<loc>mabocode.github.io/</loc>
+<loc>http://localhost:4004/</loc>
 </url>
 <url>
-<loc>mabocode.github.io/tags</loc>
+<loc>http://localhost:4004/tags</loc>
 </url>
 </urlset>
