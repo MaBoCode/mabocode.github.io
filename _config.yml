@@ -6,7 +6,7 @@ description: >-
   If you're eager to learn about Programming, Computer Security and much more, read my stories.
   So, this is what I learned today...
 url: "https://mabocode.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-base_url: ""
+base_url: "/"
 show_excerpts: true
 
 #paginate: 6

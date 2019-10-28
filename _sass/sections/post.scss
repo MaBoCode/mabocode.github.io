@@ -1,18 +1,31 @@
 .box {
 
+    display: block;
+
     overflow-y: scroll;
     margin: 0;
+    
+    width: 80vw;
 
     @media screen and (max-width: $mobileW) {
         width: auto;
-        overflow: hidden;
+        //overflow: hidden;
+        height: 100%;
+    }
+
+    @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
+        width: 70vw;
     }
 
     .post-container {
         padding: 40px 60px;
 
-        @media screen and (max-width: $smallMobileW) {
+        @media screen and (max-width: $mobileW) {
             padding: 20px 30px;
+        }
+
+        @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
+            padding: 40px 30px;
         }
     }
 
@@ -23,27 +36,33 @@
             font-size: 3.2rem;
             font-weight: 300;
 
-            @media screen and (max-width: $smallMobileW) {
+            @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
                 font-size: 1.8rem;
+            }
+
+            @media screen and (max-width: $mobileW) {
+                font-size: 1.2rem;
+            }
+
+            @media screen and (max-width: $smallMobileW) {
+                font-size: 1rem;
             }
         }
 
         .post-meta {
             margin: 50px 0 40px;
 
+            @media screen and (max-width: $mobileW) {
+                margin-top: 30px;
+            }
+
             .post-categories {
                 li {
-                    @media screen and (max-width: 1024px) {
-                        margin-bottom: 22px;
-                    }
-
-                    @media screen and (max-width: $smallMobileW) {
-                        margin-bottom: 18px;
-                    }
+                    margin-bottom: 0;
                 }
 
                 li:last-child {
-                    @media screen and (max-width: $smallMobileW) {
+                    @media screen and (max-width: $mobileW) {
                         //margin-bottom: 0;
                     }
                 }
@@ -52,7 +71,7 @@
             .post-date {
                 font-size: 14px;
 
-                @media screen and (max-width: $smallMobileW) {
+                @media screen and (max-width: $mobileW) {
                     font-size: 10px;
                 }
             }
@@ -65,8 +84,13 @@
 
         //margin-top: 50px;
 
-        @media screen and (max-width: $smallMobileW) {
+        @media screen and (max-width: $mobileW) {
             font-size: .9rem;
+            text-align: justify;
+        }
+
+        @media screen and (max-width: $smallMobileW) {
+            font-size: .8rem;
             text-align: justify;
         }
     }

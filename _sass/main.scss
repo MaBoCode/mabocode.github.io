@@ -24,7 +24,7 @@ html, body {
     box-sizing: border-box;
 
     @media screen and (max-width: $mobileW) {
-        height: auto;
+        //height: auto;
     }
 }
 
@@ -83,7 +83,7 @@ p > a:visited {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
