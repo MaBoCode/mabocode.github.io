@@ -62,7 +62,7 @@
 
             padding-bottom: 8px;
 
-            @media screen and (max-width: $smallMobileW) {
+            @media screen and (max-width: $mobileW) {
                 font-size: 1.2em;
             }
             
@@ -104,7 +104,7 @@
 
                     transition: color .2s;
 
-                    @media screen and (max-width: $smallMobileW) {
+                    @media screen and (max-width: $mobileW) {
                         font-size: 1em;
                     }
 

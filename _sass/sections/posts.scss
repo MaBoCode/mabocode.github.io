@@ -1,21 +1,10 @@
 .box {
-    display: block;
-    
-    //flex-direction: column;
-
-    //height: 100%;
-    //width: 80%;
-
-    //width: auto;
-
     width: 80vw;
     
     margin: 0;
     padding: 0;
 
     .home-title {
-        //display: block;
-
         font-size: 30px;
         font-family: 'Noto Sans JP', sans-serif;
 
@@ -43,14 +32,10 @@
     
     justify-content: space-evenly;
 
-    //align-content: space-between;
+    align-items: center;
 
     margin: 0;
-    //width: inherit;
 
-    //background-color: green;
-    //height: 100vh;
-    //width: 80%;
     padding: 60px 80px;
 
     @media screen and (max-width: $mobileW) {
@@ -58,9 +43,8 @@
     }
 
     @media screen and (max-width: $largeTabletW) {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
+        //flex-direction: column;
+        //flex-wrap: nowrap;
     }
 
     @media screen and (max-width: $largeTabletW) and (min-width: $tabletW) {
@@ -69,7 +53,7 @@
 }
 
 .post-card {
-    //display: flex;
+    display: flex;
 
     //flex: 1 1 auto;
     flex-grow: 1;
