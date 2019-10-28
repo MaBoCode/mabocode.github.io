@@ -24,6 +24,11 @@ $darkBg: #383D47;
 
 /* Devices size */
 
-$mobileW: 768px;
-$smallMobileW: 480px;
-$tabletW: 1024px;
+$mobileW: 414px;
+$smallMobileW: 320px;
+$tabletW: 768px;
+$largeTabletW: 1024px;
+
+/* Paragraphs truncation */
+$maxLines: 3;
+$lineHeight: 22px;

@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="mabocode.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="mabocode.github.io/" rel="alternate" type="text/html" /><updated>2019-08-02T19:39:48+02:00</updated><id>mabocode.github.io/feed.xml</id><title type="html">MbM Blog</title><subtitle>Hey ! I'm Matthias, a passionate computer science student.  If you're eager to learn more about Programming, Computer Security and much more, read my stories. So, this is what I learned today...</subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="https://mabocode.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mabocode.github.io/" rel="alternate" type="text/html" /><updated>2019-10-28T22:15:45+01:00</updated><id>https://mabocode.github.io/feed.xml</id><title type="html">Matthias’ Blog</title><subtitle>Hey ! I'm Matthias, a passionate computer science student.  If you're eager to learn about Programming, Computer Security and much more, read my stories. So, this is what I learned today...</subtitle><entry><title type="html">OverTheWire: Natas - Level 0 to 1</title><link href="https://mabocode.github.io/posts/2019/07/01/otw-natas-0" rel="alternate" type="text/html" title="OverTheWire: Natas - Level 0 to 1" /><published>2019-07-01T08:31:56+02:00</published><updated>2019-07-01T08:31:56+02:00</updated><id>https://mabocode.github.io/posts/2019/07/01/otw-natas-0</id><content type="html" xml:base="https://mabocode.github.io/posts/2019/07/01/otw-natas-0">Good morning everyone !&lt;br&gt;
+This is my first post and I'm really happy to get started. &lt;!--more--&gt;
+
+Today I'm going to progress in [OverTheWire's Natas](http://overthewire.org/wargames/natas/) wargame which teaches us the basics of serverside web-security.
+To get started, just visit [natas0.natas.labs.overthewire.org](http://natas0.natas.labs.overthewire.org). The username and password for level 0 are natas0.
+
+The goal of this wargame is to retrieve the password for the next level by exploring the site, finding vulnerabilities and exploiting them.
+
+This first level is quite easy since we just have to view the source code to get the password.
+
+That's it for level 0, **keep hacking and have a great day !**
+
+{% highlight c linenos%}
+
+{% endhighlight  %}</content><author><name></name></author><category term="OverTheWire" /><category term="Natas" /><summary type="html">Good morning everyone ! This is my first post and I’m really happy to get started.</summary></entry></feed>

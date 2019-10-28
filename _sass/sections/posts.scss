@@ -1,16 +1,18 @@
 .box {
-    //display: flex;
+    display: block;
     
     //flex-direction: column;
 
     //height: 100%;
-    width: 80%;
+    //width: 80%;
+
+    //width: auto;
     
     margin: 0;
     padding: 0;
 
     .home-title {
-        display: block;
+        //display: block;
 
         font-size: 30px;
         font-family: 'Noto Sans JP', sans-serif;
@@ -24,8 +26,9 @@
 
         border-bottom: 1px solid $midCNLight;
 
-        @media screen and (max-width: $smallMobileW) {
-            margin: 40px 40px 0;
+        @media screen and (max-width: $mobileW) {
+            margin: 40px 40px 20px;
+            font-size: 24px;
         }
     }
 }
@@ -38,38 +41,53 @@
     
     justify-content: space-evenly;
 
-    align-items: center;
+    //align-content: space-between;
+
+    margin: 0;
+
+    //width: inherit;
 
     //background-color: green;
     //height: 100vh;
     //width: 80%;
-    margin: 0;
     padding: 60px 80px;
 
-    @media screen and (max-width: $smallMobileW) {
-        padding: 60px 0;
+    @media screen and (max-width: $mobileW) {
+        padding: 0;
+    }
+
+    @media screen and (max-width: $largeTabletW) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    @media screen and (max-width: $largeTabletW) and (min-width: $tabletW) {
+        padding: 40px 40px;
     }
 }
 
 .post-card {
-    display: flex;
+    //display: flex;
 
-    flex: 1 1 auto;
+    //flex: 1 1 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 
-    overflow: hidden;
-
+    //overflow: hidden;
 
     cursor: pointer;
 
     background: white;
 
-    min-height: 300px;
-    width: 350px;
+    height: auto;
+    width: auto;
 
     border-radius: 5px;
 
     box-shadow: 8px 14px 38px rgba(39,44,49,.09), 1px 3px 8px rgba(39,44,49,.06);
-    transition: all .5s;
+    transition: box-shadow .5s;
 
     margin: 0 20px 60px;
 
@@ -83,18 +101,42 @@
     animation-fill-mode: forwards;
 
     */
+
     @media screen and (max-width: $smallMobileW) {
-        padding: 10px 13px;
+        //width: 250px;
+        width: auto;
+    }
+
+    @media screen and (max-width: $mobileW) {
         margin-bottom: 30px;
+        height: 220px;
+        width: 320px;
+    }
+
+    @media screen and (max-width: $smallMobileW){
+        width: auto;
+    }
+
+    @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
+        max-width: none;
+        //min-height: 200px;
+        height: auto;
+        width: auto;
     }
 
     .post-content {
-        display: flex;
+        //display: flex;
 
-        flex-direction: column;
+        //width: inherit;
+
+        //flex-direction: column;
 
         margin: 0;
         padding: 3vh 2vw;
+
+        @media screen and (max-width: $mobileW) {
+            padding: 10px 20px;
+        }
 
         .post-title {
             //margin-top: 0;
@@ -105,11 +147,11 @@
 
             margin-top: 0;
 
-            @media screen and (max-width: $tabletW) {
+            @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
                 font-size: 25px;
             }
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: $mobileW) {
                 font-size: 18px;
             }
         }
@@ -118,16 +160,21 @@
             opacity: .8;
         }
 
-        .post-excerpt {
-            line-height: 26px;
+        .post-date {
+            text-align: right;
+        }
 
-            
-           
+        .post-excerpt {
+            //line-height: 26px;
             
             text-overflow: ellipsis;
 
-            @media screen and (max-width: $tabletW) {
-                line-height: 22px;
+            @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
+                //line-height: 22px;
+            }
+
+            @media screen and (max-width: $mobileW) {
+                line-height: 18px;
             }
 
             p {
@@ -135,12 +182,13 @@
                 margin-bottom: 0;
                 font-size: 15px;
 
-                @media screen and (max-width: $tabletW) {
+                @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
                     font-size: 14px;
                 }
 
-                @media screen and (max-width: 320px) {
-                    font-size: 13px;
+                @media screen and (max-width: $mobileW) {
+                    font-size: 12px;
+                    max-width: 300px;
                 }
             }
         }
@@ -148,15 +196,11 @@
 
 }
 
-.post-card:last-child {
-    margin-bottom: 0;
-}
-
 .post-meta {
     display: flex;
 
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     margin: 8px 0 0;
 }
@@ -201,16 +245,13 @@
 
     z-index: 300;
 
-    @media screen and (max-width: $tabletW) {
+    @media screen and (min-width: $tabletW) and (max-width: $largeTabletW) {
         font-size: 14px;               
     }
 
-    @media screen and (max-width: $smallMobileW) {
-        font-size: 12px;               
-    }
-
-    @media screen and (max-width: 320px) {
-        font-size: 11px;
+    @media screen and (max-width: $mobileW) {
+        font-size: 10px;
+        padding: 4px 14px;          
     }
 }
 
@@ -230,7 +271,7 @@
 
     white-space: nowrap;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: $mobileW) {
         font-size: 10px;
     }
 }

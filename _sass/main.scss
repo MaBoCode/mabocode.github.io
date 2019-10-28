@@ -14,12 +14,18 @@
 
 html, body {
     height: 100%;
-    width: 100vw;
+    max-width: 100%;
+
+    overflow-x: hidden;
 
     margin: 0;
     padding: 0;
 
     box-sizing: border-box;
+
+    @media screen and (max-width: $mobileW) {
+        height: auto;
+    }
 }
 
 html {
@@ -31,6 +37,7 @@ body {
     color: $highCNLight;
 
     font-family: 'Open Sans', sans-serif;
+    //background-color: white;
 }
 
 main {
@@ -40,7 +47,7 @@ main {
 
     align-items: stretch;
 
-    height: 100%;
+    height: inherit;
 
     padding: 0;
     margin: 0;

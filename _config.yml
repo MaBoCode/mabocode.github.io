@@ -1,12 +1,12 @@
 
-title: MbM Blog
-email: matthias-brown@orange.fr
+title: Matthias' Blog
+email: matthias.brown@etu.univ-tours.fr
 description: >-
   Hey ! I'm Matthias, a passionate computer science student. 
-  If you're eager to learn more about Programming, Computer Security and much more, read my stories.
+  If you're eager to learn about Programming, Computer Security and much more, read my stories.
   So, this is what I learned today...
-url: "mabocode.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-base_url: /blog-v2
+url: "https://mabocode.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+base_url: ""
 show_excerpts: true
 
 #paginate: 6
@@ -19,7 +19,7 @@ my_info:
   full_name     : Matthias Brown
   pseudo        : MbM
   profession    : Computer Science Student
-  email         : matthias-brown@orange.fr
+  email         : matthias.brown@etu.univ-tours.fr
   socials:
     github      : MaBoCode
     linkedIn    : matthias-brown-2ba617173
@@ -31,10 +31,11 @@ sass:
 
 # Serving
 detach              : false
-port                : 4001
-host                : 127.0.0.1
+#port                : 4004
+#host                : 127.0.0.1
 baseurl             : "" # does not include hostname
 show_dir_listing    : false
+livereload          : true
 
 # Build settings
 markdown: kramdown
@@ -46,9 +47,11 @@ plugins:
 
 # Filtering Content
 show_drafts         : null
-limit_posts         : 0
+limit_posts         : 20
 future              : false
 unpublished         : false
+
+incremental         : true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -61,3 +64,5 @@ unpublished         : false
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+permalink: /posts/:categories/:year/:month/:day/:title
